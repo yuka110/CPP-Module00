@@ -5,22 +5,22 @@
 #                                                      +:+                     #
 #    By: yitoh <yitoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
-#    Created: 2024/01/19 15:57:18 by yitoh         #+#    #+#                  #
-#    Updated: 2024/01/28 16:06:41 by yitoh         ########   odam.nl          #
+#    Created: 2024/01/28 16:36:02 by yitoh         #+#    #+#                  #
+#    Updated: 2024/01/28 16:37:00 by yitoh         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=megaphone
+NAME	=phonebook
 CC		=c++
 CFLAGS	=-Wall -Werror -Wextra #-g -fsanitize=thread #-flto -O3
 RM		=rm -f
-SRC		=megaphone.cpp
+SRC		=phonebook.cpp
 OBJ		=$(SRC:%.cpp=obj/%.o)
 
 all:	$(NAME)
 
 
-$(OBJ):		$(SRC) Makefile
+$(OBJ):		$(SRC) phonebook.hpp Makefile
 				@mkdir -p $(dir $@)
 				@printf "\e[1;34mBuilding $@\n\e[0;00m"
 				@$(CC) $(CFLAGS) -c $(@:obj/%.o=%.cpp) -o $@
