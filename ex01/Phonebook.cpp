@@ -1,27 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   phonebook.cpp                                      :+:    :+:            */
+/*   Phonebook.cpp                                      :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: yitoh <yitoh@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/01/28 16:37:05 by yitoh         #+#    #+#                 */
-/*   Updated: 2024/02/03 15:14:11 by yitoh         ########   odam.nl         */
+/*   Updated: 2024/04/20 18:58:59 by yitoh         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "phonebook.hpp"
+#include "Phonebook.hpp"
 
-void    PhoneBook::add(Contact data){
-    Contact  data;
+PhoneBook::PhoneBook()
+{
+    std::cout << "Phonebook is constructed" << std::endl;  
+}
 
+PhoneBook::~PhoneBook()
+{
+    std::cout << "Phonebook is deconstructed" << std::endl;    
+}
+
+
+void    PhoneBook::add()
+{
+    std::string f_name;
+    std::string l_name;
+    std::string n_name;
+    std::string phone;
+    std::string secret;
+    
+    
+
+    
+    
+    std::cout << "Please enter your first name: " << std::endl;
+    std::getline(std::cin, f_name);
 
 }
 
-void    PhoneBook::search(Contact data){
+void    PhoneBook::search(){
 
 }
 
-void    PhoneBook::exit(Contact data){
+void    PhoneBook::exit(){
 
 }

@@ -6,11 +6,11 @@
 /*   By: yitoh <yitoh@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/02/03 14:20:18 by yitoh         #+#    #+#                 */
-/*   Updated: 2024/02/03 14:49:04 by yitoh         ########   odam.nl         */
+/*   Updated: 2024/04/20 18:56:40 by yitoh         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "phonebook.hpp"
+#include "Phonebook.hpp"
 
 int main(void)
 {
@@ -28,6 +28,7 @@ int main(void)
     }
     else if (!action.compare("EXIT")){
         std::cout << "EXIT!\n";
+        return (0);
         //clean data and return 0 operation
     }
     else

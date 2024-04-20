@@ -6,7 +6,7 @@
 #    By: yitoh <yitoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/28 16:36:02 by yitoh         #+#    #+#                  #
-#    Updated: 2024/02/03 14:25:32 by yitoh         ########   odam.nl          #
+#    Updated: 2024/04/20 18:46:43 by yitoh         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME	=phonebook
 CC		=c++
 CFLAGS	=-Wall -Werror -Wextra #-g -fsanitize=thread #-flto -O3
 RM		=rm -f
-SRC		=phonebook.cpp main.cpp
+SRC		=Phonebook.cpp Contact.hpp main.cpp
 OBJ		=$(SRC:%.cpp=obj/%.o)
 
 all:	$(NAME)
