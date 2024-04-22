@@ -6,21 +6,21 @@
 #    By: yitoh <yitoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/28 16:36:02 by yitoh         #+#    #+#                  #
-#    Updated: 2024/04/20 18:46:43 by yitoh         ########   odam.nl          #
+#    Updated: 2024/04/22 16:42:59 by yitoh         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=phonebook
+NAME	=Phonebook
 CC		=c++
-CFLAGS	=-Wall -Werror -Wextra #-g -fsanitize=thread #-flto -O3
+CFLAGS	=-Wall -Werror -Wextra -std=c++11 -g #-fsanitize=address
 RM		=rm -f
-SRC		=Phonebook.cpp Contact.hpp main.cpp
+SRC		=PhoneBook.cpp Contact.cpp main.cpp
 OBJ		=$(SRC:%.cpp=obj/%.o)
 
 all:	$(NAME)
 
 
-$(OBJ):		$(SRC) phonebook.hpp Makefile
+$(OBJ):		$(SRC) Makefile
 				@mkdir -p $(dir $@)
 				@printf "\e[1;34mBuilding $@\n\e[0;00m"
 				@$(CC) $(CFLAGS) -c $(@:obj/%.o=%.cpp) -o $@
