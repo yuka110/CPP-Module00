@@ -5,16 +5,16 @@
 #                                                      +:+                     #
 #    By: yitoh <yitoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
-#    Created: 2024/01/28 16:36:02 by yitoh         #+#    #+#                  #
-#    Updated: 2024/04/22 21:23:40 by yitoh         ########   odam.nl          #
+#    Created: 2024/04/22 21:22:29 by yitoh         #+#    #+#                  #
+#    Updated: 2024/04/22 21:23:31 by yitoh         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=MyPhonebook
+NAME	=DreamJob
 CC		=c++
 CFLAGS	=-Wall -Werror -Wextra -std=c++11 -g #-fsanitize=address
 RM		=rm -f
-SRC		=PhoneBook.cpp Contact.cpp main.cpp
+SRC		=Account.cpp tests.cpp
 OBJ		=$(SRC:%.cpp=obj/%.o)
 
 all:	$(NAME)
