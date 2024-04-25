@@ -6,7 +6,7 @@
 /*   By: yitoh <yitoh@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/04/22 21:23:54 by yitoh         #+#    #+#                 */
-/*   Updated: 2024/04/25 06:51:44 by yitoh         ########   odam.nl         */
+/*   Updated: 2024/04/25 15:24:45 by yitoh         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,12 +118,9 @@ void    Account::_displayTimestamp( void )
 {
     time_t now = time(0);
     tm *tm = localtime(&now);
-    std::cout << "[" << tm->tm_year+1900;
-    if (tm->tm_mon + 1 < 10)
-        std::cout << "0";
-    std::cout << tm->tm_mon + 1;
-    if (tm->tm_mday + 1 < 10)
-        std::cout << "0";
-    std::cout << tm->tm_mday << "_"<< tm->tm_hour + 5 << tm->tm_min + 30 << tm->tm_sec << "]";
+    char buffer[20];
+
+    strftime(buffer, sizeof(buffer), "[%Y%m%d_%H%M%S] ", tm);
+    std::cout << buffer;
     
 }
