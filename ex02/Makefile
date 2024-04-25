@@ -6,13 +6,13 @@
 #    By: yitoh <yitoh@student.codam.nl>               +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/04/22 21:22:29 by yitoh         #+#    #+#                  #
-#    Updated: 2024/04/22 21:23:31 by yitoh         ########   odam.nl          #
+#    Updated: 2024/04/25 05:59:14 by yitoh         ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=DreamJob
 CC		=c++
-CFLAGS	=-Wall -Werror -Wextra -std=c++11 -g #-fsanitize=address
+CFLAGS	=-Wall -Werror -Wextra -std=c++98 -g #-fsanitize=address
 RM		=rm -f
 SRC		=Account.cpp tests.cpp
 OBJ		=$(SRC:%.cpp=obj/%.o)

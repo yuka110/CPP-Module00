@@ -33,7 +33,7 @@ public:
 	~Account( void );
 
 	void	makeDeposit( int deposit );
-	bool	makeWithdrawal( int withdrawal );
+	bool	makeWithdrawal(int withdrawal);
 	int		checkAmount( void ) const;
 	void	displayStatus( void ) const;
 
@@ -56,14 +56,4 @@ private:
 
 };
 
-
-
-// ************************************************************************** //
-// vim: set ts=4 sw=4 tw=80 noexpandtab:                                      //
-// -*- indent-tabs-mode:t;                                                   -*-
-// -*- mode: c++-mode;                                                       -*-
-// -*- fill-column: 75; comment-column: 75;                                  -*-
-// ************************************************************************** //
-
-
-#endif /* __ACCOUNT_H__ */
+#endif
